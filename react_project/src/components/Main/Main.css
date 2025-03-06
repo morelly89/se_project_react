@@ -1,0 +1,18 @@
+.cards__text {
+  margin: 40px 0 34px;
+  font-family: Cabinet Grotesk;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.8px;
+  letter-spacing: 0%;
+  color: black;
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 21px;
+}
