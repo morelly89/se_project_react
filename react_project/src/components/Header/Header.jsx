@@ -1,6 +1,6 @@
-import "./Header.css";
 import Logo from "../../assets/Logo.png";
 import avatar from "../../assets/avatar.png";
+import "./Header.css";
 function Header({ handleAddClick, weatherData }) {
   const currentDate = new Date().toLocaleString("default", {
     month: "long",
@@ -8,7 +8,7 @@ function Header({ handleAddClick, weatherData }) {
   });
   return (
     <header className="header">
-      <img className="header__logo" src={Logo} />
+      <img className="header__logo" src={Logo} alt="header logo" />
       <p className="header__date-and-location">
         {currentDate} {weatherData.city}
       </p>
