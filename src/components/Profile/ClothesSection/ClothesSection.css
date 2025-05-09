@@ -1,0 +1,30 @@
+.clothes-section__container {
+  display: flex;
+  margin: 16px 0 16px 0;
+  gap: 20px;
+}
+
+.clothes-section__text {
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.clothes-section__button {
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #00000099;
+  border-style: none;
+}
+
+.clothes-section__items {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 21px;
+}

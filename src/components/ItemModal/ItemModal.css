@@ -1,0 +1,60 @@
+.modal__content_type_image {
+  max-width: 498px;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.modal__content {
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal__image {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.modal__footer {
+  display: flex;
+  padding: 20px 32px 32px 32px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.modal__caption {
+  text-align: center;
+  text-align: left;
+  margin-bottom: 12px;
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.modal__weather {
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.modal__delete-button {
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  border-style: none;
+  color: #ff4d00;
+  background-color: transparent;
+  width: 101px;
+  height: 24px;
+  margin-left: auto;
+}

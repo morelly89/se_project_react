@@ -1,0 +1,19 @@
+.page {
+  background-color: #f3f3f3;
+}
+
+.page__content {
+  max-width: 1360px;
+  padding: 0 20px;
+  margin: 0 auto;
+  font-family: "CabinetGrotesk";
+}
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  src: url("../../assets/fonts/CabinetGrotesk-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/CabinetGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

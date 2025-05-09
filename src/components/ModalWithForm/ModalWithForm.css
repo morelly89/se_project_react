@@ -1,0 +1,113 @@
+.modal {
+  background-color: #0000004d;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal__content {
+  background-color: white;
+  position: relative;
+  border-radius: 20px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  margin: auto;
+  padding: 28px 28px 36px;
+}
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+}
+
+.modal__label:first-child {
+  margin: 24px 0 24px;
+}
+
+.modal__input {
+  border-style: none;
+  border-bottom: 1px black solid;
+}
+
+.modal__legend {
+  margin-bottom: 12px;
+  color: black;
+}
+
+.modal__title {
+  margin-bottom: 20px;
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  margin: 0;
+  background: url("../../assets/Union.png") no-repeat transparent;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+.modal__submit {
+  border-radius: 4px;
+  background-color: #0000004d;
+  width: 124px;
+  height: 36px;
+  color: white;
+  border: none;
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+}
+.modal__radio-button {
+  border: none;
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 24px 0 32px;
+  padding: 0;
+  color: #00000080;
+}
+
+.modal__radio-input {
+  margin-right: 8px;
+}
+
+.modal__label_type_radio {
+  width: 173px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.modal__label_type_radio:last-child {
+  margin-bottom: 0;
+}
+
+.modal_opened {
+  visibility: visible;
+}
+
+.modal__content_size_lg {
+  width: 670px;
+}
