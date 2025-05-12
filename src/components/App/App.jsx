@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { currentTemperatureUnitContexts } from "../../contexts/CurrentTemperatureUnitContexts";
-import { addItems, deleteItems, getItems } from "../../utils/Api";
+import { addItems, deleteItems, getItems } from "../../utils/api.js";
 import { APIkey, myCoordinates } from "../../utils/Constants";
 import { filterWeatherData, getWeather } from "../../utils/weatherApi";
 import AddItemModal from "../AddItemModal/AddItemModal";
@@ -48,7 +48,8 @@ function App() {
       .catch((err) => console.error(err));
   };
 
-  const handleCardDelete = () => {
+  const handleCardDelete = (e) => {
+    e.preventDefault();
     deleteItems(selectedCard.id)
       .then(() => {
         setClothingItems((prevItem) => {
@@ -104,6 +105,7 @@ function App() {
               path="/Profile"
               element={
                 <Profile
+                  handleAddClick={handleAddClick}
                   onCardClick={handleCardClick}
                   clothingItems={clothingItems}
                 ></Profile>

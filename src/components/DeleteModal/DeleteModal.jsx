@@ -12,7 +12,9 @@ function DeleteModal({ isOpen, onClose, onDelete }) {
         Are you sure you want to delete this item? This action is irreversible.
       </p>
       <div className="modal__button-container">
-        <button className="modal__submit_delete">Yes, delete</button>
+        <button className="modal__submit_delete" type="submit">
+          Yes, delete
+        </button>
         <button
           onClick={onClose}
           className="modal__cancel-button"
