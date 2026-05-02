@@ -20,6 +20,7 @@
   letter-spacing: 0%;
   color: #00000099;
   border-style: none;
+  cursor: pointer;
 }
 
 .clothes-section__items {

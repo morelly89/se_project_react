@@ -10,8 +10,12 @@ This project makes an API call when the main component mounts, then fetch the su
 - jsx syntax, which is similar to HTML, specifies how your user interface should appear within javascript components.
 - CSS was utilized for style.
 - executing API calls to temporarily store data on a local JSON file on a mock server that mimics an API.
+
+## Backend Repository
+
+[The backend repository for this project can be found here](https://github.com/morelly89/se_project_express)
   
-  ## Project Preview
+## Project Preview
 
 ### Screenshot of the homepage
 

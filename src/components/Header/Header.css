@@ -30,6 +30,7 @@
   font-size: 20px;
   line-height: 24.8px;
   letter-spacing: 0%;
+  cursor: pointer;
 }
 
 .header__user-container {
@@ -55,9 +56,30 @@
   width: 40px;
   height: 40px;
   margin-left: 12px;
+  border-radius: 50%;
 }
 
 .header__username,
 .header__username:visited {
   color: black;
+}
+
+.header__signup-button {
+  font-family: "CabinetGrotesk";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border-style: none;
+}
+
+.header__login-button {
+  font-family: "CabinetGrotesk";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border-style: none;
 }

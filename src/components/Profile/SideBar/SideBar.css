@@ -1,12 +1,19 @@
 .sidebar {
   display: flex;
+  flex-direction: column;
   margin-right: 116px;
+}
+
+.sidebar__user-info {
+  display: flex;
+  margin-bottom: 24px;
 }
 
 .sidebar__avatar {
   width: 56px;
   height: 56px;
   margin-right: 16px;
+  border-radius: 50%;
 }
 
 .sidebar__username {
@@ -17,4 +24,33 @@
   letter-spacing: 0%;
   display: flex;
   align-items: center;
+}
+
+.sidebar__user-action {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__signout-button {
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar__edit-button {
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: none;
+  margin-bottom: 8px;
+  cursor: pointer;
 }

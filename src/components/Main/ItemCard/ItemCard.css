@@ -9,23 +9,48 @@
   overflow: hidden;
 }
 
-.card__name {
+.card__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   position: absolute;
-  top: 15px;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.card__name {
   margin: 0;
-  padding: 0;
+  padding: 2px 12px;
   text-align: center;
-  width: 73px;
+  min-width: 73px;
   height: 24px;
-  border: 1px solid #ffffff;
   border-radius: 8px;
   background-color: #ffffff;
   font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0%;
   color: #00000099;
+}
+
+.card__like-button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../../assets/heart-empty.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  padding: 0;
+}
+
+.card__like-button_active {
+  background-image: url("../../../assets/heart-filled.png");
 }
 
 .card__image {

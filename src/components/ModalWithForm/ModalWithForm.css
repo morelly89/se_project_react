@@ -9,49 +9,42 @@
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  z-index: 100;
+}
+
+.modal_opened {
+  visibility: visible;
 }
 
 .modal__content {
-  background-color: white;
+  background-color: #fff;
   position: relative;
   border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.modal__content_size_sm {
+  width: 496px;
+}
+
+.modal__content_size_lg {
+  width: 670px;
 }
 
 .modal__form {
   display: flex;
   flex-direction: column;
-  width: 440px;
-  margin: auto;
+  align-items: flex-start;
   padding: 28px 28px 36px;
-}
-
-.modal__label {
-  display: flex;
-  flex-direction: column;
-  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
-}
-
-.modal__label:first-child {
-  margin: 24px 0 24px;
-}
-
-.modal__input {
-  border-style: none;
-  border-bottom: 1px black solid;
-}
-
-.modal__legend {
-  margin-bottom: 12px;
-  color: black;
+  box-sizing: border-box;
 }
 
 .modal__title {
-  margin-bottom: 20px;
+  margin: 0 0 24px;
   font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0%;
 }
 
 .modal__close-button {
@@ -64,25 +57,48 @@
   width: 20px;
   height: 20px;
   border: none;
+  cursor: pointer;
 }
-.modal__submit {
-  border-radius: 4px;
-  background-color: #0000004d;
-  width: 124px;
-  height: 36px;
-  color: white;
-  border: none;
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 24px;
   font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
+
+.modal__input {
+  margin-top: 8px;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0 0 4px;
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.modal__input:focus {
+  outline: none;
+}
+
 .modal__radio-button {
   border: none;
   font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  margin: 24px 0 32px;
+  margin: 0 0 32px;
   padding: 0;
   color: #00000080;
+}
+
+.modal__legend {
+  margin-bottom: 12px;
+  color: #000;
 }
 
 .modal__radio-input {
@@ -94,20 +110,58 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 8px;
-  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .modal__label_type_radio:last-child {
   margin-bottom: 0;
 }
 
-.modal_opened {
-  visibility: visible;
+.modal__button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  width: 168px;
+  height: 40px;
 }
 
-.modal__content_size_lg {
-  width: 670px;
+.modal__switch-button {
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #00000080;
+  min-width: 124px;
+  height: 36px;
+  border: none;
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.modal__submit {
+  border-radius: 4px;
+  background-color: #0000004d;
+  min-width: 124px;
+  height: 36px;
+  color: white;
+  border: none;
+  font-family: "CabinetGrotesk", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.modal__submit_disabled {
+  background-color: #0000004d;
+  color: #ffffff;
+  cursor: default;
+}
+
+.modal__submit_active {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
 }
